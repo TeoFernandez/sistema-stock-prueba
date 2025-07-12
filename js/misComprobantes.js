@@ -1,4 +1,3 @@
-import { initNuevoComponente } from "../components/nuevo/js/nuevo.js";
 import { initBuscarComponente } from "../components/buscar/js/buscar.js";
 
 export const MISCOMPROBANTES_SERVICE = "http://localhost:8080";
@@ -15,8 +14,8 @@ async function buscarComprobantes() {
     principalHeader.innerText = "Buscar";
 
     await loadComponent("components/buscar/html/index.html", 
-                  "components/buscar/css/buscar.css",
-                  "components/buscar/js/buscar.js");
+                    "components/buscar/css/buscar.css",
+                    "components/buscar/js/buscar.js");
 
 
     initBuscarComponente();
@@ -27,8 +26,8 @@ async function nuevoComprobante() {
     principalHeader.innerText = "Nuevo";
 
     await loadComponent("components/nuevo/html/index.html", 
-                  "components/nuevo/css/nuevo.css",
-                  "components/nuevo/js/nuevo.js");
+                    "components/nuevo/css/nuevo.css",
+                    "components/nuevo/js/nuevo.js");
 
     initNuevoComponente();
 }
