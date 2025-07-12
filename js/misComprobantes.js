@@ -5,13 +5,12 @@ export const MISCOMPROBANTES_SERVICE = "http://localhost:8080";
 addEventListener("DOMContentLoaded", ()=>{
 
     opcBuscar.addEventListener("click", buscarComprobantes);
-    opcNuevo.addEventListener("click", nuevoComprobante);
 
 });
 
 async function buscarComprobantes() {
 
-    principalHeader.innerText = "Buscar";
+    principalHeader.innerText = "Usuarios";
 
     await loadComponent("components/buscar/html/index.html", 
                     "components/buscar/css/buscar.css",
@@ -19,17 +18,6 @@ async function buscarComprobantes() {
 
 
     initBuscarComponente();
-}
-
-async function nuevoComprobante() {
-
-    principalHeader.innerText = "Nuevo";
-
-    await loadComponent("components/nuevo/html/index.html", 
-                    "components/nuevo/css/nuevo.css",
-                    "components/nuevo/js/nuevo.js");
-
-    initNuevoComponente();
 }
 
 async function loadComponent(html, css, js) {
