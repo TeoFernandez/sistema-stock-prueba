@@ -10,16 +10,20 @@
     <div class="login-container">
         <h2>Iniciar sesión</h2>
 
-        <form action="" method="POST">
-            <label>Usuario:</label><br>
-            <input type="text" name="usuario" required><br><br>
+        <form>
+            <label for="usuario">Usuario:</label><br>
+            <input type="text" id="usuario" name="usuario" required><br><br>
 
-            <label>Contraseña:</label><br>
-            <input type="password" name="clave" required><br><br>
+            <label for="clave">Contraseña:</label><br>
+            <input type="password" id="clave" name="clave" required><br><br>
 
-            <button type="submit" onclick="location.href='index.html'">Iniciar sesión</button>
+            <!-- Botón con apariencia visual, pero es un enlace -->
+            <a href="index.html" class="boton">Iniciar sesión</a>
         </form>
+
     </div>
+
+    
 
 </body>
 </html>
