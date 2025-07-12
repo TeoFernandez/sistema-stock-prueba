@@ -6,7 +6,7 @@
     <title>Login - Sistema de Stock</title>
 </head>
 <body>
-    
+
     <div class="login-container">
         <h2>Iniciar sesión</h2>
 
@@ -17,7 +17,7 @@
             <label>Contraseña:</label><br>
             <input type="password" name="clave" required><br><br>
 
-            <input type="submit" value="Ingresar">
+            <input type="submit" value="Ingresar" >
         </form>
     </div>
 
