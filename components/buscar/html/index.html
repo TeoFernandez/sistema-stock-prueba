@@ -1,22 +1,21 @@
 <div id="componenteBuscar">
-    <label for="">Entidad: </label>        
+    
+    <label for="">Rol: </label>        
     <select id="entidad">
-        <option value="Edesur">Edesur</option>
-        <option value="Metrogas">Metrogas</option>
-        <option value="Movistar">Movistar</option>
-        <option value="Aysa">Aysa</option>
+        <option value="administrador">Administrador</option>
+        <option value="empleado">Empleado</option>
     </select>
-    <label for="">Propiedad/Bien: </label>
-    <select id="propiedad">
-        <option value="PropA">PropA</option>
-        <option value="PropB">PropB</option>
-        <option value="PropC">PropC</option>
-        <option value="PropD">PropD</option>
-    </select>
-    <label for="">Fecha Pago Desde: </label>
-    <input id="fechaPagoDesde" type="date">
-    <label for="">Fecha Pago Hasta: </label>
-    <input id="fechaPagoHasta" type="date">
-    <div id="btnBuscar" class="btn">Buscar</div>
+
+    <section>
+        <form action="">
+            <label for="">Nombre:</label>
+            <input type="text">
+            <label for="">Apellido</label>
+            <input type="text">
+        </form>
+    </section>
+
+    <div id="btnBuscar" class="btn">Guardar</div>
+    <div id="btnCancelar" class="btn">Cancelar</div>
 </div>
 <div id="opcBuscarRet"></div>

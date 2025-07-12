@@ -1,5 +1,6 @@
-#componenteBuscar {
+#componenteBuscar { 
     display: flex;
+    flex-direction: column; /* ✅ Esto hace que se apilen */
     justify-content: flex-start;
     background-color: #E3EAF4; 
     padding: 20px 25px;
@@ -8,18 +9,27 @@
     font-family: 'Inter', sans-serif;
     color: #2D2D2D;
     margin: 0 auto;
+    max-width: 600px;
 }
 
+/* Espaciado entre los elementos internos */
+#componenteBuscar > * {
+    margin-bottom: 15px;
+}
+
+/* Etiquetas */
 #componenteBuscar label {
     display: block;
     font-weight: 600;
     color: #3A7BD5; 
     font-size: 14px;
-    margin: 18px 10px 6px 10px;
+    margin-bottom: 6px;
 }
 
+/* Campos de formulario */
 #componenteBuscar select,
-#componenteBuscar input[type="date"] {
+#componenteBuscar input[type="date"],
+#componenteBuscar input[type="text"] {
     width: 100%;
     padding: 8px 12px;
     border-radius: 6px;
@@ -30,13 +40,32 @@
     transition: border-color 0.25s ease;
 }
 
+/* Efecto al enfocar */
 #componenteBuscar select:focus,
-#componenteBuscar input[type="date"]:focus {
+#componenteBuscar input[type="date"]:focus,
+#componenteBuscar input[type="text"]:focus {
     outline: none;
     border-color: #3A7BD5; 
     box-shadow: 0 0 5px rgba(58, 123, 213, 0.5);
 }
 
+/* Estilo del botón */
+#btnBuscar {
+    background-color: #3A7BD5;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 6px;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#btnBuscar:hover {
+    background-color: #2f6dc0;
+}
+
+/* Tabla */
 .tabla-comprobantes {
     width: 100%;
     border-collapse: collapse;
@@ -72,4 +101,3 @@
     width: 24px;
     object-fit: contain;
 }
-
