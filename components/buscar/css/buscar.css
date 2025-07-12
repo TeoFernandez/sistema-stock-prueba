@@ -1,0 +1,75 @@
+#componenteBuscar {
+    display: flex;
+    justify-content: flex-start;
+    background-color: #E3EAF4; 
+    padding: 20px 25px;
+    border-radius: 10px;
+    box-shadow: 2px 4px 16px rgba(0, 0, 0, 0.1);
+    font-family: 'Inter', sans-serif;
+    color: #2D2D2D;
+    margin: 0 auto;
+}
+
+#componenteBuscar label {
+    display: block;
+    font-weight: 600;
+    color: #3A7BD5; 
+    font-size: 14px;
+    margin: 18px 10px 6px 10px;
+}
+
+#componenteBuscar select,
+#componenteBuscar input[type="date"] {
+    width: 100%;
+    padding: 8px 12px;
+    border-radius: 6px;
+    border: 1.5px solid #B0BED9; 
+    font-size: 14px;
+    color: #2D2D2D;
+    background-color: #fff;
+    transition: border-color 0.25s ease;
+}
+
+#componenteBuscar select:focus,
+#componenteBuscar input[type="date"]:focus {
+    outline: none;
+    border-color: #3A7BD5; 
+    box-shadow: 0 0 5px rgba(58, 123, 213, 0.5);
+}
+
+.tabla-comprobantes {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: 'Inter', sans-serif;
+    margin-top: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.tabla-comprobantes thead {
+    background-color: #3A7BD5;
+    color: white;
+}
+
+.tabla-comprobantes th,
+.tabla-comprobantes td {
+    padding: 10px;
+    border: 1px solid #ccc;
+    text-align: left;
+}
+
+.tabla-comprobantes tbody tr {
+    background-color: #EAF1FA;
+}
+
+.tabla-comprobantes .celda-comprobante {
+    text-align: center;
+}
+
+.tabla-comprobantes img {
+    height: 24px;
+    width: 24px;
+    object-fit: contain;
+}
+

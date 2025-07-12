@@ -1,0 +1,33 @@
+
+<div id="componenteNuevo">
+    <div class="comprobante-izq">
+        <label for="entidad">Entidad: </label>        
+        <select id="entidad" name="entidad">
+            <option value="Edesur">Edesur</option>
+            <option value="Metrogas">Metrogas</option>
+            <option value="Movistar">Movistar</option>
+            <option value="Aysa">Aysa</option>
+        </select>
+        <label for="propiedad">Propiedad/Bien: </label>
+        <select id="propiedad" name="propiedad">
+            <option value="PropA">PropA</option>
+            <option value="PropB">PropB</option>
+            <option value="PropC">PropC</option>
+            <option value="PropD">PropD</option>
+        </select>
+        <label for="fechaVencimiento">Fecha Vencimiento: </label>
+        <input name="fechaVencimiento" id="fechaVencimiento" type="date">
+        <label for="fechaPago">Fecha Pago: </label>
+        <input class="form-control" name="fechaPago" id="fechaPago" type="date">
+        <div id="btnNuevo" class="btn">Agregar</div>
+    </div>
+    <div class="comprobante-der">
+        <div class="drop-zone" id="dropZone">
+            <p class="informacion">Arrastrá tu comprobante acá o hacé clic para seleccionarlo (PDF, JPG, PNG)</p>
+            <input type="file" id="fileInput" accept=".pdf,.jpg,.jpeg,.png" />
+        </div>
+        <div class="preview-zone" id="previewZone">
+            <p class="informacion">Vista previa del archivo</p>
+        </div>
+    </div>
+</div>

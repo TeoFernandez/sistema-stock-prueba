@@ -17,7 +17,7 @@
             <label>Contraseña:</label><br>
             <input type="password" name="clave" required><br><br>
 
-            <input type="submit" value="Ingresar" >
+            <button type="submit" onclick="location.href='../index.php'">Iniciar sesión</button>
         </form>
     </div>
 
